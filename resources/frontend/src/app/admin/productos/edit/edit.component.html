@@ -1,0 +1,9 @@
+<p>
+  edit works!
+</p>
+
+<div *ngIf="fetched">
+  <input type="text" [(ngModel)]="nombre">
+  <input type="text" [(ngModel)]="precio">
+  <button type="button" (click)= "saveProducto()">Guardar</button>
+</div>

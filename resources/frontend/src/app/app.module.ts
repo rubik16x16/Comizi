@@ -6,6 +6,7 @@ import 'popper.js';
 import 'bootstrap';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HttpClientModule }    from '@angular/common/http';
 import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     UserModule,
     AdminModule
   ],

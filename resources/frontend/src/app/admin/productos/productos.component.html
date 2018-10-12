@@ -1,0 +1,11 @@
+<h2>Productos</h2>
+
+<div *ngFor="let producto of productos">
+  <span>nombre: {{ producto.getNombre() }}</span>
+  <span>precio: {{ producto.getPrecio() }}</span>
+  <a routerLink="show/{{ producto.getId() }}" routerLinkActive="active">Ver</a>
+  <a routerLink="edit/{{ producto.getId() }}" routerLinkActive="active">Editar</a>
+  <button type="button" (click)="deleteProducto(producto.getId())">Eliminar</button>
+</div>
+
+<a routerLink="create" routerLinkActive="active">Nuevo Producto</a>
